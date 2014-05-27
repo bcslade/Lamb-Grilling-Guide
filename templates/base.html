@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="shortcut icon" href="{% static '/images/favicon.ico' %}">
+	<link rel="stylesheet" href="{% static '/css/style.css' %}">
+	<link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script type="text/javascript" src="//use.typekit.net/jax0ujs.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	{% block header %}
+	<title>{% block title %}Lean on Lamb{% endblock %}</title>
+	{% endblock header %}
+
+</head>
+<body>
+
+	{% block content %}
+	Main content
+
+	{% endblock content %}
+	<div class="footer-desktop">
+	<div class="container">
+	  <footer>
+	    <div class="row">
+	      <div class="col-sm-6 col-md-6 col-lg-4 footer-left">
+	        <p>All content &copy;Tri-Lamb Group 2014</p>
+	      </div>
+	      <div class="col-lg-3"></div>
+	      <div class="col-sm-6 col-md-6  col-lg-5 footer-right">
+	        <!-- insert press kit button and social icons -->
+	          <div class="main-button">
+	            <div class="btn" "btn-lg"><a href="http://www.leanonlamb.com/media/activity/SummerGrilling2014.pdf">DOWNLOAD A PRESS KIT</a></div>
+	        </div>
+
+	        <div class="social">
+	          <a href="https://twitter.com/leanonlamb">
+	            <div class="social-icon" id="twitter">
+	              <img src="{% static '/images/twitter.png' %}" class="img-responsive"/>
+	            </div>
+	          </a>
+	          <a href="http://www.pinterest.com/leanonlamb/">
+	            <div class="social-icon" id="pinterest">
+	              <img src="{% static '/images/pinterest.png' %}" class="img-responsive"/>
+	            </div>
+	          </a>
+	        </div>
+
+	      </div>
+	      <!-- footer-right -->
+	    </div>
+	    <!-- row -->
+	  </footer>
+	</div>
+	<!-- /container -->
+</div>
+
+<div class="footer-mobile">
+	<div class="container">
+	  <footer>
+	    <div class="row">
+	      <div class="col-sm-6 col-md-6 col-lg-4 footer-left">
+	        <p>All content &copy;Tri-Lamb Group 2014</p>
+	      </div>
+	      <div class="col-lg-3"></div>
+	      <div class="col-sm-6 col-md-6  col-lg-5 footer-right">
+	        <!-- insert press kit button and social icons -->
+	        <div class="social">
+	          <a href="https://twitter.com/leanonlamb">
+	            <div class="social-icon" id="twitter">
+	              <img src="{% static '/images/twitter.png' %}" class="img-responsive"/>
+	            </div>
+	          </a>
+	          <a href="http://www.pinterest.com/leanonlamb/">
+	            <div class="social-icon" id="pinterest">
+	              <img src="{% static '/images/pinterest.png' %}" class="img-responsive"/>
+	            </div>
+	          </a>
+	        </div>
+
+	          <div class="main-button">
+	            <div class="btn" "btn-lg"><a href="http://www.leanonlamb.com/media/activity/SummerGrilling2014.pdf">DOWNLOAD A PRESS KIT</a></div>
+	        </div>
+
+	      </div>
+	      <!-- footer-right -->
+	    </div>
+	    <!-- row -->
+	  </footer>
+	</div>
+	<!-- /container -->
+</div>
+
+	{% block scripts %}
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="{% static '/js/main.js' %}"></script>
+	<script src="{% static '/js/bootstrap.js' %}"></script>
+	<script type="text/javascript">
+
+	// Cache selectors
+	var lastId,
+	    topMenu = $("#anchor-nav"),
+	    topMenuHeight = topMenu.outerHeight()+42, // padding top is 42px, so set the outer height to +42
+	    // All list items
+	    menuItems = topMenu.find("a"),
+	    // Anchors corresponding to menu items
+	    scrollItems = menuItems.map(function(){
+	      var item = $($(this).attr("href"));
+	      if (item.length) { return item; }
+	    });
+	
+	// Bind click handler to menu items
+	// so we can get a fancy scroll animation
+
+	menuItems.click(function(e){
+	  var href = $(this).attr("href"),
+	      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+	  $('html, body').stop().animate({ 
+	      scrollTop: offsetTop
+	  }, 500);
+	  e.preventDefault();
+	});
+	
+	// Bind to scroll
+
+	$(window).scroll(function(){
+	   // Get container scroll position
+	   var fromTop = $(this).scrollTop()+topMenuHeight;
+	   
+	   // Get id of current scroll item
+	   var cur = scrollItems.map(function(){
+	     if ($(this).offset().top < fromTop)
+	       return this;
+	   });
+	   // Get the id of the current element
+	   cur = cur[cur.length-1];
+	   var id = cur && cur.length ? cur[0].id : "";
+	   
+	   if (lastId !== id) {
+	       lastId = id;
+	       // Set/remove active class
+	       menuItems
+	         .parent().removeClass("active")
+	         .end().filter("[href=#"+id+"]").parent().addClass("active");
+	   }                   
+	});
+
+// Back to top script 
+
+	$(document).ready(function() {
+	    var offset = 320;
+	    var duration = 500;
+	    jQuery(window).scroll(function() {
+	        if (jQuery(this).scrollTop() > offset) {
+	            jQuery('.back-to-top').fadeIn(duration);
+	        } else {
+	            jQuery('.back-to-top').fadeOut(duration);
+	        }
+	    });
+	    
+	    jQuery('.back-to-top').click(function(event) {
+	        event.preventDefault();
+	        jQuery('html, body').animate({scrollTop: 0}, duration);
+	        return false;
+	    })
+	});
+
+	// Close menu on click for your mobile viewing pleasure 
+
+	$('.nav li a').on('click',function(){
+	    $('.navbar-collapse.in').collapse('hide');
+	})
+
+	// Cache selectors
+	var lastId,
+	    topMenu = $("#mobile-anchor-nav"),
+	    topMenuHeight = topMenu.outerHeight()+42, // padding top is 42px, so set the outer height to +42
+	    // All list items
+	    menuItems = topMenu.find("a"),
+	    // Anchors corresponding to menu items
+	    scrollItems = menuItems.map(function(){
+	      var item = $($(this).attr("href"));
+	      if (item.length) { return item; }
+	    });
+	
+	// Bind click handler to menu items
+	// so we can get a fancy scroll animation
+
+	menuItems.click(function(e){
+	  var href = $(this).attr("href"),
+	      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+	  $('html, body').stop().animate({ 
+	      scrollTop: offsetTop
+	  }, 500);
+	  e.preventDefault();
+	});
+	
+	// Bind to scroll
+
+	$(window).scroll(function(){
+	   // Get container scroll position
+	   var fromTop = $(this).scrollTop()+topMenuHeight;
+	   
+	   // Get id of current scroll item
+	   var cur = scrollItems.map(function(){
+	     if ($(this).offset().top < fromTop)
+	       return this;
+	   });
+	   // Get the id of the current element
+	   cur = cur[cur.length-1];
+	   var id = cur && cur.length ? cur[0].id : "";
+	   
+	   if (lastId !== id) {
+	       lastId = id;
+	       // Set/remove active class
+	       menuItems
+	         .parent().removeClass("active")
+	         .end().filter("[href=#"+id+"]").parent().addClass("active");
+	   }                   
+	});
+
+
+	</script>
+
+	{% endblock scripts%}
+
+</body>
+</html>

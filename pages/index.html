@@ -1,0 +1,527 @@
+{% extends "base.html" %}
+{% block content %}
+  
+    <div id="browser-menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+<!--           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+ -->          <a class="navbar-brand" href="http://grilling.leanonlamb.com"><img src="{% static '/images/lean-on-lamb-logo.png' %}" width="147" height="107" /></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <nav class="navbar-right" id="anchor-nav">
+          	<ul class="nav navbar-nav">
+<!--           	    <li class="active"><a href="/">Home</a></li>
+
+ -->          	
+								<li class="active"></li>
+ 								<li><a href="#top">TOP</a></li>
+          	    <li><a href="#recipes">RECIPES</a></li>
+          	    <li><a href="#grilling">GRILLING TIPS</a></li>
+          	    <li><a href="#cuts">CUTS</a></li>
+          	    <li><a href="#nutrition">NUTRITION</a></li>
+
+          	</ul>
+          </nav>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+
+        <div id="mobile-menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="http://grilling.leanonlamb.com/"><img src="{% static '/images/lean-on-lamb-logo.png' %}" width="147" height="107" /></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <nav class="navbar-right" id="mobile-anchor-nav">
+                <ul class="nav navbar-nav">
+    <!--                <li class="active"><a href="/">Home</a></li>
+
+     -->            
+                    <li class="active"></li>
+                <li><a href="#mobile-top">TOP</a></li>
+                <li><a href="#mobile-recipes">RECIPES</a></li>
+                <li><a href="#mobile-grilling">GRILLING TIPS</a></li>
+                <li><a href="#mobile-cuts">CUTS</a></li>
+                <li><a href="#mobile-nutrition">NUTRITION</a></li>
+
+                </ul>
+              </nav>
+            </div><!--/.navbar-collapse -->
+          </div>
+        </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <a id="mobile-top"></a><a id="footer-top"></a>
+    <a id="top"></a><a id="footer-top"></a>
+    <div class="section section-1" id="slide-1" data-slide="1">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3"></div>
+          <div class="col-sm-6 col-md-6 top-image">
+            <img src="{% static '/images/top-main-image.png' %}" class="img-responsive" />
+          </div>
+          <div class="col-sm-3 col-md-3 lamb-badge" id="section-1-badge">
+            <img src="{% static '/images/top-section-badge.png' %}" class="img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" id="mobile-recipes"></a>
+    <a href="#" id="recipes"></a>
+    <div class="section section-2">
+      <div class="container">
+        <div class="row banner">
+          <div class="col-sm-3 col-md-4">
+            <div class="hr-left"><hr class="none"></div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <img src="{% static '/images/featured-recipes.png' %}" class="img-responsive" />
+          </div>
+          <div class="col-sm-3 col-md-4">
+            <hr class="none hr-right">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 recipe">
+            <a href="http://grilling.leanonlamb.com/lamb-chops.html"><div class="grid-container">
+              <div class="grid-gel-wrapper">
+                <div class="label-bg">
+                  <table class="gel-title">
+                    <tr>
+                      <td>full recipe</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="grid-image-wrapper">
+                  <img src="{% static '/images/recipes-grid-image-1.jpg' %}" class="img-responsive" />
+                </div>
+              </div>
+                <div class="row grid-text-wrapper">
+                  <div class="col-xs-9 col-sm-10 col-md-10">
+                  <p>Grilled lamb chops with Green Bean & Potato Salad</p>
+                </div>
+                  <div class="col-xs-3 col-sm-2 col-md-2">
+                    <img src="{% static '/images/cook-time-20.png' %}" class="img-responsive" />
+                </div>
+
+              </div>
+            </div></a>
+          </div>
+          <div class="col-md-6 recipe">
+            <a href="{{ ROOT_URL }}/rack-of-lamb.html"><div class="grid-container">
+              <div class="grid-gel-wrapper">
+                <div class="label-bg">
+                  <table class="gel-title">
+                    <tr>
+                      <td>full recipe</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="grid-image-wrapper">
+                  <img src="{% static '/images/recipes-grid-image-2.jpg' %}" class="img-responsive" />
+                </div>
+              </div>
+                <div class="row grid-text-wrapper">
+                  <div class="col-xs-9 col-sm-10 col-md-10">
+                  <p>Cumin & mustard rack of lamb & white bean salad</p>
+                </div>
+                  <div class="col-xs-3 col-sm-2 col-md-2">
+                    <img src="{% static '/images/cook-time-35.png' %}" class="img-responsive" />
+                </div>
+
+              </div>
+            </div></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 recipe">
+            <a href="http://grilling.leanonlamb.com/kabobs.html"><div class="grid-container">
+              <div class="grid-gel-wrapper">
+                <div class="label-bg">
+                  <table class="gel-title">
+                    <tr>
+                      <td>full recipe</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="grid-image-wrapper">
+                  <img src="{% static '/images/recipes-grid-image-4.jpg' %}" class="img-responsive" />
+
+                </div>
+              </div>
+                <div class="row grid-text-wrapper">
+                  <div class="col-xs-9 col-sm-10 col-md-10">
+                  <p>Grilled Lamb kabobs with peach & red onion</p>
+                </div>
+                  <div class="col-xs-3 col-sm-2 col-md-2">
+                    <img src="{% static '/images/cook-time-15.png' %}" class="img-responsive" />
+                </div>
+
+              </div>
+            </div></a>
+          </div>
+          <div class="col-md-6">
+            <a href="http://grilling.leanonlamb.com/grilled-lamb.html"><div class="grid-container">
+              <div class="grid-gel-wrapper">
+                <div class="label-bg">
+                  <table class="gel-title">
+                    <tr>
+                      <td>full recipe</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="grid-image-wrapper">
+                  <img src="{% static '/images/recipes-grid-image-3.jpg' %}" class="img-responsive" />
+                </div>
+              </div>
+                <div class="row grid-text-wrapper">
+                  <div class="col-xs-9 col-sm-10 col-md-10">
+                  <p>Kale & pomegranate salad with grilled lamb</p>
+                </div>
+                  <div class="col-xs-3 col-sm-2 col-md-2">
+                    <img src="{% static '/images/cook-time-20.png' %}" class="img-responsive" />
+                </div>
+
+              </div>
+            </div></a>
+          </div>
+        </div>
+
+        <div class="row footer-banner">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8">
+            <img src="{% static '/images/featured-recipes@2x.png' %}" class="img-responsive" />
+          </div>
+          <div class="col-md-2">
+          </div>
+        </div>
+
+
+
+
+
+        <div class="grill-button-wrapper">
+          <div class="row">
+            <div class="col-sm-4 col-md-4">
+              <div class="grill-button" id="grill-button1">
+                <a href="http://www.leanonlamb.com/recipes/5/"><div class="btn-lg">GRILLED BUTTERFLIED LEG OF LAMB</div></a>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <div class="grill-button" id="grill-button2">
+                <a href="http://www.leanonlamb.com/recipes/8/"><div class="btn-lg">MEDITERRANEAN LAMB LOIN CHOPS</div></a>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <div class="grill-button">
+                <a href="http://www.leanonlamb.com/recipes/2/"><div class="btn-lg">GRILLED LAMB AND VEGETABLE KABOBS</div></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- grill button wrapper -->
+
+      </div>
+      <!-- container -->
+    </div>
+    <!-- section 2 -->
+    <a href="#" id="mobile-grilling"></a>
+    <a href="#" id="grilling"></a>
+    <div class="section section-3">
+      <div class="container">
+        <div class="row banner">
+        	<div class="col-sm-3 col-md-4">
+        	  <div class="hr-left"><hr class="none"></div>
+        	</div>
+          <div class="col-sm-6 col-md-4">
+            <img src="{% static '/images/grilling-guidelines.png' %}" class="img-responsive" />
+          </div>
+          <div class="col-sm-3 col-md-4">
+            <hr class="none hr-right">
+          </div>
+        </div>
+        <div class="row title">
+          <div class="col-sm-3 col-md-3"></div>
+          <div class="col-sm-6 col-md-6">
+            <img src="{% static '/images/grill-perfection.png' %}" class="img-responsive"/>
+          </div>
+          <div class="col-sm-3 col-md-3 lamb-badge none" id="section-3-badge">
+            <img src="{% static '/images/grilling-perfection-badge.png' %}" class="img-responsive" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-3 grill-guide">
+            <img src="{% static '/images/rack-of-lamb.png' %}" class="img-responsive"/>
+          </div>
+          <div class="col-sm-6 col-md-3 grill-guide">
+            <img src="{% static '/images/rib-chops.png' %}" class="img-responsive"/>
+          </div>
+          <div class="col-sm-6 col-md-3 grill-guide">
+            <img src="{% static '/images/leg.png' %}" class="img-responsive"/>
+          </div>
+          <div class="col-sm-6 col-md-3 grill-guide">
+            <img src="{% static '/images/leg-steaks.png' %}" class="img-responsive"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-3 grill-guide">
+            <img src="{% static '/images/leg-boneless.png' %}" class="img-responsive"/>
+          </div>
+          <div class="col-sm-6 col-md-3 grill-guide">
+            <img src="{% static '/images/loin-chops.png' %}" class="img-responsive"/>
+          </div>
+          <div class="col-sm-6 col-md-3 grill-guide">
+            <img src="{% static '/images/shoulder-chops.png' %}" class="img-responsive"/>
+          </div>
+          <div class="col-sm-6 col-md-3 grill-guide">
+            <img src="{% static '/images/ground-lamb.png' %}" class="img-responsive"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" id="mobile-cuts"></a>
+    <a href="#" id="cuts"></a>
+    <div class="section section-4 none">
+      <div class="container">
+        <div class="row banner">
+        	<div class="col-sm-3 col-md-4">
+        	  <hr class="none hr-left">
+        	</div>
+        	<div class="col-sm-6 col-md-4">
+        	  <img src="{% static '/images/new-to-lamb.png' %}" class="img-responsive" />
+        	</div>
+        	<div class="col-sm-3 col-md-4">
+        	  <hr class="none hr-right">
+        	</div>
+        </div>
+        <div class="row title">
+          <div class="col-md-3 col-lg-3"></div>
+          <div class="col-md-6 col-lg-6">
+            <img src="{% static '/images/CUTS-HEADER-RPLCMT.png' %}" class="img-responsive"/>
+          </div>
+          <div class="col-md-3 col-lg-3 lamb-badge none" id="section-4-badge">
+            <img src="{% static '/images/badge-@2x.png' %}" class="img-responsive" />
+          </div>
+        </div>
+        <div class="row">
+                 <div id="table-wrapper" class="col-sm-6 col-md-6">
+                 <!-- Insert 'table' -->
+                 <div class="row lamb-table the-top">
+                 <div class="col-sm-1 col-md-1">
+                  <div class="grill">
+                    <img src="{% static '/images/grill@2x.png' %}" class="img-responsive" />
+                  </div>
+                 </div>
+                  <div class="col-sm-3 col-md-3 lamb-title cut">
+                    <p>LEG OF LAMB</p>
+                  </div>
+                  <div class="col-sm-8 col-md-8">
+                    <p>The classic leg of lamb comes from the hind quarter and is the most versatile cut. Providing lots of options for the grill, leg of lamb can be butterflied, cubed (for kabobs), or cut into sirloin chops or steaks. It’s also one of the most economical cuts of lamb.</p>
+                  </div>
+                 </div>   
+                 <div class="row lamb-table">
+                 <div class="col-sm-1 col-md-1">
+                
+                 <div class="grill">
+                   <img src="{% static '/images/grill@2x.png' %}" class="img-responsive" />
+                 </div>
+
+                 </div>
+
+                  <div class="col-sm-3 col-md-3 lamb-title cut">
+                    <p>LAMB LOIN</p>
+                  </div>
+                  <div class="col-sm-8 col-md-8">
+                    <p>The loin of lamb comes from the middle, lower section of the rear quarter. It is usually divided into loin chops, which are basically small T-bone steaks.</p>
+                  </div>
+                 </div>        
+                 <div class="row lamb-table">
+                 <div class="col-sm-1 col-md-1">
+                             <div class="grill">
+                             <img src="{% static '/images/grill@2x.png' %}" class="img-responsive" />
+                             </div>
+
+                 </div>
+                  <div class="col-sm-3 col-md-3 lamb-title cut">
+                    <p>LAMB SHOULDER</p>
+                  </div>
+                  <div class="col-sm-8 col-md-8">
+                    <p>The shoulder of the lamb, derived from the hindquarter, is an economical cut.  Shoulder chops work great on the grill.</p>
+                  </div>
+                 </div>        
+                 <div class="row lamb-table">
+                 <div class="col-sm-1 col-md-1">
+                             <div class="grill">
+                             <img src="{% static '/images/grill@2x.png' %}" class="img-responsive" />
+                             </div>
+
+                 </div>
+
+                  <div class="col-sm-3 col-md-3 lamb-title cut">
+                    <p>GROUND LAMB</p>
+                  </div>
+                  <div class="col-sm-8 col-md-8">
+                    <p>Ground lamb is typically made from the shoulder, which although is not a lean cut, it is incredibly moist and delicious. Once you try a lamb burger, you’ll never look at burgers the same way again.</p>
+                  </div>
+                 </div> 
+                 
+                <div class="row lamb-table">
+                 <div class="col-sm-1 col-md-1">
+                             <div class="grill">
+                             <img src="{% static '/images/grill@2x.png' %}" class="img-responsive" />
+                             </div>
+
+                 </div>
+
+                  <div class="col-sm-3 col-md-3 lamb-title cut">
+                    <p>RACK OF LAMB</p>
+                  </div>
+                  <div class="col-sm-8 col-md-8">
+                    <p>The iconic rack of lamb comes from the front/middle section. Rib chops are individual or double chops cut from the rack.  A rack of lamb can also be frenched, which is the removal of fat and tissue between the bones.</p>
+                  </div>
+                 </div> 
+            
+                 </div>
+                 <div class="col-sm-6 col-md-6">
+                   <div class="lamb-graph">
+                     <img src="{% static '/images/cuts-diagram-2.png' %}" class="img-responsive"/>
+                   </div>
+                 </div>
+               </div>
+      </div>
+    </div>
+
+    <!-- Begin Mobile Build -->
+
+    <a href="#" id="mobile-cuts"></a>
+    <a href="#" id="cuts"></a>
+    <div class="section section-4 section-mobile"><a href="#" id="cuts"></a>
+     <div class="container">
+       <div class="row banner">
+        <div class="col-sm-3 col-md-4">
+          <hr class="none hr-left">
+        </div>
+         <div class="col-md-4">
+           <img src="{% static '/images/new-to-lamb.png' %}" class="img-responsive" />
+         </div>
+         <div class="col-sm-3 col-md-4">
+           <hr class="none hr-right">
+         </div>
+       </div>
+       <div class="row title">
+         <div class="col-md-4"></div>
+         <div class="col-md-4">
+           <img src="{% static '/images/CUTS-HEADER-RPLCMT.png' %}" class="img-responsive"/>
+         </div>
+         <div class="col-md-4 lamb-badge none" id="section-4-badge">
+           <img src="{% static '/images/lamb-is-raised-badge.png' %}" class="img-responsive" />
+         </div>
+       </div>
+
+       <div class="col-md-6">
+         <div class="lamb-graph">
+           <img src="{% static '/images/cuts-diagram-2.png' %}" class="img-responsive"/>
+         </div>
+       </div>
+
+       <div class="row lamb-mobile-table">
+         <div class="col-md-6">
+          <!-- Insert 'table' -->
+          <div class="row lamb-table lamb-top">
+            <div class="col-md-3 lamb-title">
+              <p class="lamb-table-title">LEG OF LAMB</p>
+            </div>
+            <div class="col-md-9 table-bottom">
+              <p>The classic leg of lamb comes from the hind quarter and is the most versatile cut. Providing lots of options for the grill, leg of lamb can be butterflied, cubed (for kabobs), or cut into sirloin chops or steaks. It’s also one of the most economical cuts of lamb.</p>
+            </div>
+          </div>   
+          <div class="row lamb-table">
+            <div class="col-md-3 lamb-title">
+              <p class="lamb-table-title">LAMB LOIN</p>
+            </div>
+            <div class="col-md-9 table-bottom">
+              <p>The loin of lamb comes from the middle, lower section of the rear quarter. It is usually divided into loin chops, which are basically small T-bone steaks.</p>
+            </div>
+          </div>        
+          <div class="row lamb-table">
+            <div class="col-md-3 lamb-title">
+              <p class="lamb-table-title">LAMB SHOULDER</p>
+            </div>
+            <div class="col-md-9 table-bottom">
+              <p>The shoulder of the lamb, derived from the hindquarter, is an economical cut.  Shoulder chops work great on the grill.</p>
+            </div>
+          </div>        
+          <div class="row lamb-table">
+            <div class="col-md-3 lamb-title">
+              <p class="lamb-table-title">GROUND LAMB</p>
+            </div>
+            <div class="col-md-9 table-bottom">
+              <p>Ground lamb is typically made from the shoulder, which although is not a lean cut, it is incredibly moist and delicious. Once you try a lamb burger, you’ll never look at burgers the same way again.</p>
+            </div>
+          </div>        
+     
+         </div>
+       </div>
+     </div>
+    </div>
+
+    <a href="#" id="mobile-nutrition"></a>
+		<a href="#" id="nutrition"></a>
+    <div class="section section-5">
+      <div class="container">
+        <div class="row title">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <img src="{% static '/images/lamb-is-nourishing.png' %}" class="img-responsive"/>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-6 left-section">
+            <p class="lamb-italic-blurb">Full of protein and nutrient rich, lamb will give your grill some good lovin’!</p>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="main-button" id="button-left">
+                  <a href="#" class="back-to-top"><div class="btn" "btn-lg">BACK TO RECIPES</div></a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="main-button" id="button-right">
+                  <a href="http://leanonlamb.com"><div class="btn" "btn-lg">LEANONLAMB.COM</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 lamb-blurb">
+            <p><strong>Lamb is an excellect source of protein.</strong></p>
+            <p class="blurb-top">Protein is an important part of your plate because it can lower the blood sugar impact of meals. A 3oz, serving of lamb delivers, on average, ~50% of your daily protein needs (or 23 grams of protein).</p>
+            <p><strong>Lamb is raised without the addition of synthetic hormones.</strong></p>
+<!--             <p class="blurb-bottom">Lamb is raised without the addition of synthetic hormones.</p>
+ -->          </div>
+          <div class="col-sm-3 col-md-3 lamb-blurb">
+            <p><strong>Nutritional Powerhouse.</strong></p>
+            <p>Lamb is rich in protein, zinc, selenium, and vitamin B-12.</p>
+            <p>A 3oz. serving of lamb provides nearly 5 times the amount of the essential omega-3 fatty acid, alpha-linolenic acid (ALA), compared to a 3oz. serving of beef.</p>
+            <p><strong>Lean cuts include the leg, loin, and rack.</strong></p>
+            <p>Lean cuts have only 170 calories per 3oz. serving,</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+      
+
+{% endblock content%}

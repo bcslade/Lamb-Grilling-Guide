@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% block content %}
+  
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://grilling.leanonlamb.com/"><img src="{% static '/images/lean-on-lamb-logo.png' %}" width="147" height="107" /></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <nav class="navbar-right">
+                        <ul class="nav navbar-nav">
+            <!--                <li class="active"><a href="/">Home</a></li>
+
+             -->            
+                <li class="active"></li>
+                <li><a href="http://grilling.leanonlamb.com/#top">HOME</a></li>
+                <li class="recipe-dot"><a href="http://grilling.leanonlamb.com/#recipes">RECIPES</a></li>
+                <li><a href="http://grilling.leanonlamb.com/#grilling">GRILLING TIPS</a></li>
+                <li><a href="http://grilling.leanonlamb.com/#cuts">CUTS</a></li>
+                <li><a href="http://grilling.leanonlamb.com/#nutrition">NUTRITION</a></li>
+
+                        </ul>
+          </nav>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <div class="section recipe-page">
+      <div class="container">
+
+
+        <div class="row">
+          <div class="col-md-6 recipe-left">
+            <div class="page-title">
+              <h2>Cumin & mustard rack of lamb & white bean salad</h2>
+            </div>
+            <div class="ingredients-list">
+              <div class="row ingredient">
+                <div class="col-sm-8 col-md-8">
+                  <h5>For the White Bean Salad</h5>
+                  <p>2 (15-ounce cans) butter beans (no salt added)</p>
+                  <p>3 celery stalks, sliced thin</p>
+                  <p>1 small red chili pepper, sliced thin</p>
+                  <p>¼ cup sliced sweet Peppadew Peppers</p>
+                  <p>3 tablespoons chopped fresh basil</p>
+                  <p>2 tablespoons lemon juice</p>
+                  <p>2 tablespoons extra virgin olive oil</p>
+
+                </div>
+
+              <div class="col-sm-3 col-md-3"></div>
+          </div>
+
+            <div class="row ingredient">
+              <div class="col-sm-8 col-md-8">
+                <h5>For the Lamb</h5>
+                <p>2 frenched lamb racks (about 2 pounds each)</p>
+                <p>2 tablespoon Dijon mustard</p>
+                <p>2 tablespoons whole cumin seeds</p>
+                <p>2 red onions, cut into 1-inch pieces</p>
+                <p>1 teaspoon pepper</p>
+              </div>
+
+              <div class="col-sm-3 col-md-3"></div>
+            </div>
+            <div class="row ingredient">
+              <div class="col-sm-12 col-md-12">
+                <h5>instructions</h5>
+                <p>1. In a large bowl combine beans, celery, chili pepper, Peppadew peppers, basil, lemon juice and oil.  Gently toss to combine; set aside.</p>
+                <p>2. Carefully trim top layer of fat from racks. Rub each rack of lamb with 1 tablespoon Dijon mustard.  Sprinkle each rack with 1 tablespoon cumin, 1 teaspoon salt and ½ teaspoon pepper. </p>
+                <p>3. On a gas grill, turn all burners to high, close lid and heat until grates are hot, about 15 minutes.  Scrape grates clean and brush with oil. Over high heat, place racks, fat side down, on grill until browned and can be easily flipped, about 5 minutes. Flip racks and grill about 5 minutes more. Turn burners to medium, cover and cook racks about 15 minutes more, or until internal temperature reaches 145 for medium rare. Remove to clean plate and let rest 5 minutes, carve racks into chops, carefully slicing between each bone. Toss white bean salad again, top with extra basil leaves, and serve with lamb chops.</p>
+              </div>
+</div>
+
+
+
+            </div>
+          </div>
+
+          <div class="col-md-6 recipe-right">
+            <div class="nutrition-facts">
+              <div class="nutrition-facts-image-wrapper">
+                <img src="{% static '/images/rack.jpg' %}" class="img-responsive"/>
+              </div>
+              <div class="nutrition-facts-text-wrapper">
+                <h5>Nutrition Facts</h5>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p>Calories: 270</p>
+                    <p>Calories from Fat: 110</p>
+                    <p>Calories from Fat: 170</p>
+                    <p>Total Fat: 12g, 18%DV</p>
+                    <p>Trans Fat: 0g</p>
+                    <p>Cholesterol: 55mg, 18%DV</p>
+                    <p>Sodium: 940mg, 39%</p>
+
+                  </div>
+                  <div class="col-xs-6">
+                    <p>Total Carbohydrate: 25g, 8%DV</p>
+                    <p>Dietary Fiber: 7g, 28%DV</p>
+                    <p>Sugars: 2g</p>
+                    <p>Protein: 24g</p>
+                    <p>Vitamin A: 4%</p>
+                    <p>Vitamin C: 25%</p>
+                    <p>Calcium: 8%</p>
+                    <p>Iron: 25%</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div><!-- Row -->
+
+
+
+
+
+      <!-- Container -->
+    </div>
+  </div>
+    <!-- End -->
+    
+
+      
+
+{% endblock content%}

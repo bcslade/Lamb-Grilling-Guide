@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% block content %}
+  
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://grilling.leanonlamb.com/"><img src="{% static '/images/lean-on-lamb-logo.png' %}" width="147" height="107" /></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <nav class="navbar-right">
+          	<ul class="nav navbar-nav">
+<!--           	    <li class="active"><a href="/">Home</a></li>
+ --> 
+                <li class="active"></li>
+                <li><a href="http://grilling.leanonlamb.com/#top">HOME</a></li>
+                <li class="recipe-dot"><a href="http://grilling.leanonlamb.com/#recipes">RECIPES</a></li>
+                <li><a href="http://grilling.leanonlamb.com/#grilling">GRILLING TIPS</a></li>
+                <li><a href="http://grilling.leanonlamb.com/#cuts">CUTS</a></li>
+                <li><a href="http://grilling.leanonlamb.com/#nutrition">NUTRITION</a></li>                
+                
+
+          	</ul>
+          </nav>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <div class="section recipe-page">
+      <div class="container">
+
+
+        <div class="row">
+          <div class="col-md-6 recipe-left">
+            <div class="page-title">
+              <h2>Grilled Lamb Kabobs with peach & red onion</h2>
+            </div>
+            <div class="ingredients-list">
+              <div class="row ingredient">
+                <div class="col-sm-8 col-md-8">
+                  <h5>the marinade</h5>
+                  <p>1 large orange, zested and juiced</p>
+                  <p>2 tablespoons chipotle in adobo, minced</p>
+                  <p>2 tablespoons olive oil</p>
+                  <p>1 tablespoon garlic salt</p>
+                  <p>2 teaspoons agave or honey</p>
+                </div>
+
+              <div class="col-sm-3 col-md-3"></div>
+          </div>
+
+            <div class="row ingredient">
+              <div class="col-sm-8 col-md-8">
+                <h5>the lamb + fruit + veggie</h5>
+                <p>2 to 3 pounds boneless leg of lamb, fat trimmed</p>
+                <p>and cut into 1-inch pieces</p>
+                <p>4 peaches (firm but ripe), cut into 1-inch pieces</p>
+                <p>2 red onions, cut into 1-inch pieces</p>
+                <p>4 whole jalapeno peppers</p>
+              </div>
+
+              <div class="col-sm-3 col-md-3"></div>
+            </div>
+            <div class="row ingredient">
+              <div class="col-sm-12 col-md-12">
+                <h5>instructions</h5>
+                <p>1. If using wooden skewers, place in shallow dish and cover with water, set aside.</p>
+                <p>2. In a small bowl combine orange juice and zest, chipotle, olive oil, garlic salt, and agave; whisk to combine. Pour marinade into large, plastic, zip top bag, add lamb, close bag and marinate in refrigerator, at least 30 minutes or up to 8 hours.</p>
+                <p>3. Thread marinated lamb, peach and red onion on skewers. Place on tray.</p>
+                <p>4. On a gas grill, turn all burners to high, close lid and heat until hot, about 15 minutes. Scrape grates clean. Brush kabobs with vegetable oil (or spray lightly with oil spray). Place skewers and jalapenos on the hot grill. Cover and cook, turning kabobs and peppers occasionally, until each side has grill marks and lamb is cooked through, about 8 to 10 minutes or until lamb reaches 160 degrees for medium doneness. Remove from grill onto clean tray. Serve.</p>
+              </div>
+</div>
+
+
+
+            </div>
+          </div>
+
+          <div class="col-md-6 recipe-right">
+            <div class="nutrition-facts">
+              <div class="nutrition-facts-image-wrapper">
+                <img src="{% static '/images/header-background.jpg' %}" class="img-responsive"/>
+              </div>
+              <div class="nutrition-facts-text-wrapper">
+                <h5>Nutrition Facts</h5>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p>Calories: 340</p>
+                    <p>Calories from Fat: 170</p>
+                    <p>Total Fat: 18g, 28%DV</p>
+                    <p>Saturated Fat: 8g, 40%DV</p>
+                    <p>Trans Fat: 0g</p>
+                    <p>Cholesterol: 100mg, 33%DV</p>
+                    <p>Sodium: 350mg, 15%DV</p>
+                  </div>
+                  <div class="col-xs-6">
+                    <p>Total Carbohydrate: 14g, 5%DV</p>
+                    <p>Dietary Fiber: 2g, 8%DV</p>
+                    <p>Sugars: 5g</p>
+                    <p>Protein: 30g</p>
+                    <p>Vitamin A: 4%</p>
+                    <p>Vitamin C: 25%</p>
+                    <p>Calcium: 2%</p>
+                    <p>Iron: 15%</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div><!-- Row -->
+
+
+
+
+
+      <!-- Container -->
+    </div>
+  </div>
+    <!-- End -->
+    
+
+      
+
+{% endblock content%}

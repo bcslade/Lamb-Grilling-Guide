@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+{% block content %}
+  
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://grilling.leanonlamb.com/"><img src="{% static '/images/lean-on-lamb-logo.png' %}" width="147" height="107" /></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <nav class="navbar-right" id="anchor-nav">
+            <ul class="nav navbar-nav">
+<!--                <li class="active"><a href="/">Home</a></li>
+
+ -->            
+                <li class="active"></li>
+                <li><a href="http://grilling.leanonlamb.com/#top">HOME</a></li>
+                <li class="recipe-dot"><a href="http://grilling.leanonlamb.com/#recipes">RECIPES</a></li>
+                <li><a href="http://grilling.leanonlamb.com/#grilling">GRILLING TIPS</a></li>
+                <li><a href="http://grilling.leanonlamb.com/#cuts">CUTS</a></li>
+                <li><a href="http://grilling.leanonlamb.com/#nutrition">NUTRITION</a></li>
+
+            </ul>
+          </nav>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <div class="section recipe-page">
+      <div class="container">
+
+
+        <div class="row">
+          <div class="col-md-6 recipe-left">
+            <div class="page-title">
+              <h2>Kale & pomegranate salad with grilled lamb</h2>
+            </div>
+            <div class="ingredients-list">
+              <div class="row ingredient">
+                <div class="col-sm-8 col-md-8">
+                  <h5>For the marinade</h5>
+                  <p>1½ cup pomegranate juice</p>
+                  <p>3 tablespoons olive oil</p>
+                  <p>3 cloves garlic, chopped</p>
+                  <p>1 tablespoon ground ginger</p>
+                  <p>1 tablespoon cinnamon</p>
+                  <p>2 teaspoons cumin</p>
+                  <p>1 teaspoon salt</p>
+                  <p>½ teaspoon pepper</p>
+                  <p>1 (4-pound) leg of lamb, deboned, butterflied and trimmed of visible fat</p>
+
+                </div>
+
+              <div class="col-sm-3 col-md-3"></div>
+          </div>
+
+            <div class="row ingredient">
+              <div class="col-sm-8 col-md-8">
+                <h5>For the Dressing</h5>
+                <p>2 teaspoons Dijon mustard</p>
+                <p>2 tablespoons pomegranate balsamic vinegar</p>
+                <p>¼ cup olive oil</p>
+                <p>Salt and pepper</p>
+              </div>
+
+              <div class="col-sm-3 col-md-3"></div>
+            </div>
+
+            <div class="row ingredient">
+              <div class="col-sm-8 col-md-8">
+                <h5>For the Salad</h5>
+                <p>5 cups baby kale</p>
+                <p>1 bulb fennel, thinly sliced</p>
+                <p>½ cup pomegranate seeds or sliced red grapes</p>
+                <p>¼ cup crumbled Gorgonzola cheese</p>
+                <p>¼ cup walnut halves, toasted</p>
+
+              </div>
+
+              <div class="col-sm-3 col-md-3"></div>
+            </div>
+
+            <div class="row ingredient">
+              <div class="col-sm-12 col-md-12">
+                <h5>instructions</h5>
+                <p>1. Combine marinade ingredients in large, plastic zip top bag, add lamb and marinade in refrigerator, 8 hours or up to overnight.</p>
+                <p>2. Remove lamb from marinade, pat dry and set on tray.</p>
+                <p>3. On a gas grill, turn all burners to high, close lid and heat until hot, about 15 minutes. Scrape grates clean and brush with oil. Grill lamb, fat side down, over medium-high heat 25 to 35 minutes total, turning half-way through cooking, depending on desired doneness, about 145 degrees for medium rare and 160 degrees for medium.  
+Remove from grill and loosely cover with foil, let rest about 15 minutes and thinly slice. While lamb is resting prepare salad ingredients.</p>
+                <p>4. In a large bowl, whisk together all dressing ingredients.  Add kale, fennel, pomegranate seed and/or grapes and toss to coat. Arrange dressed salad on platter and top with sliced lamb, Gorgonzola cheese and toasted walnuts.</p>
+              </div>
+</div>
+
+
+
+            </div>
+          </div>
+
+          <div class="col-md-6 recipe-right">
+            <div class="nutrition-facts">
+              <div class="nutrition-facts-image-wrapper">
+                <img src="{% static '/images/kale.jpg' %}" class="img-responsive"/>
+              </div>
+              <div class="nutrition-facts-text-wrapper">
+                <h5>Nutrition Facts</h5>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p>Per Serving:</p>
+                    <p>Calories: 700</p>
+                    <p>Calories from Fat: 410</p>
+                    <p>Total Fat: 46g, 71%DV</p>
+                    <p>Saturated Fat: 15g, 75%DV</p>
+                    <p>Trans Fat: 0g</p>
+                    <p>Cholesterol: 165mg, 55%DV</p>
+                    <p>Sodium: 520mg, 22%DV</p>
+                    <p>Total Carbohydrate: 23g, 8%DV</p>
+                    <p>Dietary Fiber: 4g, 16%DV</p>
+                    <p>Sugars: 10g</p>
+                    <p>Protein: 51g</p>
+                    <p>Vitamin A: 170%</p>
+                    <p>Vitamin C: 130%</p>
+                    <p>Calcium: 15%</p>
+                    <p>Iron: 35%</p>
+
+                  </div>
+                  <div class="col-xs-6">
+                    <p>Per Serving (for yield of 8 servings):</p>
+                    <p>Calories: 530</p>
+                    <p>Calories from Fat: 310</p>
+                    <p>Total Fat: 34g, 52%DV</p>
+                    <p>Saturated Fat: 11g, 55%DV</p>
+                    <p>Trans Fat: 0g</p>
+                    <p>Cholesterol: 125mg, 42%DV</p>
+                    <p>Sodium: 390mg, 16%DV</p>
+                    <p>Total Carbohydrate: 17g, 6%DV</p>
+                    <p>Dietary Fiber: 3g, 12%DV</p>
+                    <p>Sugars: 8g</p>
+                    <p>Protein: 38g</p>
+                    <p>Vitamin A: 130%</p>
+                    <p>Vitamin C: 90%</p>
+                    <p>Calcium: 15%</p>
+                    <p>Iron: 25%</p>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div><!-- Row -->
+
+
+
+
+
+      <!-- Container -->
+    </div>
+  </div>
+    <!-- End -->
+    
+
+      
+
+{% endblock content%}

@@ -1,0 +1,6 @@
+{
+    "aws-access-key": "AKIAIYKBY6KCVWLHKJIA",
+    "aws-bucket-name": "grilling.leanonlamb.com",
+    "aws-bucket-website": "grilling.leanonlamb.com.s3-website-us-east-1.amazonaws.com",
+    "port": 8857
+}
